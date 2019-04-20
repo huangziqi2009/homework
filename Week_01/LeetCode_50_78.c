@@ -41,15 +41,3 @@ double myPow(double x, int n) {
     return pow;
 }
 
-#include <stdio.h>
-
-int main(int argc, char *argv[]) {
-
-    double x = 2.0;
-    int n = 5;
-    double pow = myPow(x, n);
-
-    printf("myPow(%f,%d) = %f.\n", x, n, pow);
-
-    return 0;
-}

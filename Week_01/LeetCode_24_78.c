@@ -16,14 +16,6 @@
  * };
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-struct ListNode {
-    int val;
-    struct ListNode *next;
-};
-
 struct ListNode* swapPairs(struct ListNode* head) {
 
     if (head == NULL || head->next == NULL) {
@@ -55,27 +47,3 @@ struct ListNode* swapPairs(struct ListNode* head) {
     return node.next;
 }
 
-
-int main(int argc, char *argv[]) {
-    struct ListNode *head = NULL;
-    int i = 10;
-    for (i = 5; i > 0; i--) {
-        struct ListNode *Node= (struct ListNode*)calloc(1,sizeof(struct ListNode));
-        Node->val = i;
-        Node->next = head;
-        head = Node;
-    }
- 
-    struct ListNode *p = NULL;
-    p = swapPairs(head);
-
-    struct ListNode *tmp = NULL;
-    while (p) {
-        printf("%p, %d.\n", p, p->val);
-        tmp = p;
-        p = p->next;
-        free(tmp);
-    }
-
-    return 0;
-}
