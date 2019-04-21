@@ -1,13 +1,6 @@
-this is first readme.md
-this is first readme.md
-this is first readme.md
-
-this is first readme.md
-
-this is first readme.md
-
-this is first readme.md
-
-this is first readme.md
-
-this is first readme.md
+(```)
+    function fun(){
+         echo "这是一句非常牛逼的代码";
+    }
+    fun();
+(```)
